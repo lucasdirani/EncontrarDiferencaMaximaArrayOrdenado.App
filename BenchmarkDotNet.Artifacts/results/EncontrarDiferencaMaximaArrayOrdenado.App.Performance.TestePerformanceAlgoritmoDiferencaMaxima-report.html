@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EncontrarDiferencaMaximaArrayOrdenado.App.Performance.TestePerformanceAlgoritmoDiferencaMaxima-20230606-080404</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2965/22H2/2022Update)
+Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=7.0.203
+  [Host]     : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.5 (7.0.523.17405), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                                                    Method</th><th>Array</th><th>  Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeQuadratica</td><td>Int32[142]</td><td>11,047.44 ns</td><td>220.894 ns</td><td>323.784 ns</td><td>8</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeLinear</td><td>Int32[142]</td><td>139.49 ns</td><td>1.107 ns</td><td>0.924 ns</td><td>4</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeQuadratica</td><td>Int32[18]</td><td>145.48 ns</td><td>1.971 ns</td><td>1.844 ns</td><td>5</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeLinear</td><td>Int32[18]</td><td>19.37 ns</td><td>0.406 ns</td><td>0.556 ns</td><td>1</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeQuadratica</td><td>Int32[40]</td><td>838.64 ns</td><td>6.226 ns</td><td>5.519 ns</td><td>6</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeLinear</td><td>Int32[40]</td><td>36.37 ns</td><td>0.354 ns</td><td>0.331 ns</td><td>2</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeQuadratica</td><td>Int32[80]</td><td>3,650.50 ns</td><td>72.207 ns</td><td>105.840 ns</td><td>7</td><td>-</td>
+</tr><tr><td>MedirPerformanceEncontrarDiferencaMaximaEmComplexidadeLinear</td><td>Int32[80]</td><td>67.70 ns</td><td>0.855 ns</td><td>0.800 ns</td><td>3</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
